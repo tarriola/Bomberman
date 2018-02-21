@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bomberman</title>
+		<link rel="stylesheet" type="text/css" href="./css/page.css">
+	</head>
+	<body>
+		<div id="header">
+		</div>
+
+		<div id="left_side">
+			<ul>
+				<h3>Play Mode Player 1</h3>
+				<li>W: Move up</li>
+				<li>A: Move left</li>
+				<li>S: Move down</li>
+				<li>D: Move right</li>
+				<li>Space: Plant bomb</li>
+			</ul>
+		</div>
+
+		<div id="second_player_mode">
+			<ul>
+				<h3>Play Mode Player 2</h3>
+				<li>Arrow Up: Move up</li>
+				<li>Arrow Left: Move left</li>
+				<li>Arrow Down: Move down</li>
+				<li>Arrow Right: Move right</li>
+				<li>Enter: Plant bomb</li>
+			</ul>
+		</div>
+
+    <!-- <div id="left_side_down">
+			<ul>
+        <button id="button" onclick="myFunction()" >Pause Game</button>
+        <button id="button1" onclick="myFunction1()">End Game</button>
+        <button id="button2" onclick="myFunction2()">Sound On</button>
+
+			</ul>
+		</div> -->
+
+    <div id="left_side_down">
+      <ul>
+        <h3> Current Game Status </h3>
+        <p id="current_level"> Current Level : </p>
+				<p id="mode"> Mode : </p>
+				<p id="levels"> Total Levels :  </p>						
+			</ul>
+		</div>
+
+
+		<div id="middle">
+      <canvas id="gameWorld" tabindex="1" width="850" height="850"
+              style="border: 1px solid brown; background: black">
+      </canvas>
+		</div>
+
+
+    <script type="text/javascript" src="./js/levels.js"></script>
+    <script type="text/javascript" src="./js/gameengine.js"></script>
+    <script type="text/javascript" src="./js/assetmanager.js"></script>
+		<script type="text/javascript" src="./js/utility.js"></script>
+
+    <script type="text/javascript" src="./js/bomb.js"></script>
+    <script type="text/javascript" src="./js/bomberman.js"></script>
+    <script type="text/javascript" src="./js/AIBomberman.js"></script>
+    <script type="text/javascript" src="./js/enermy.js"></script>
+    <script type="text/javascript" src="./js/enermy_level1.js"></script>
+    <script type="text/javascript" src="./js/enermy_level2.js"></script>
+    <script type="text/javascript" src="./js/enermy_level3.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+
+
+    <script>
+    function myFunction() {
+      gameWorld.focus();
+    }
+
+
+
+    </script>
+	</body>
+</html>
